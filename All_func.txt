@@ -1,0 +1,24 @@
+1. get_db
+2. pg_server
+
+3. write
+4. read
+5. update
+
+6. read_raw
+7. write_raw
+8. update_raw
+
+9. print_ok
+10. print_warn
+11. print_fail
+12. close
+13. close_all
+
+14. delete
+15. check_parameters
+
+16. update_multiple
+17. update_multiple_col
+18. check_multiple_insert_param
+19. insert_multiple
