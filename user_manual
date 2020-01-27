@@ -1,0 +1,33 @@
+from pg_python.pg_python import *
+db_name = 'abhishekdb'
+username = 'postgres'
+password = 'admin'
+host_address = '127.0.0.1'
+pgs = pg_server(db_name, username, password, host_address)
+
+'''read func demo'''
+# value_list = read('person', ['id','first_name'],{'id':54},clause='>',limit='10')
+# print(type(value_list))
+# # value_list = read()
+# for i in value_list:
+#     print(i)
+
+'''read raw demo'''
+# value_list = read_raw('select * from person', None)
+# print(value_list)
+
+'''write demo'''
+# print(write('person', {' id' : 150 ,' first_name' : 'Abhishek' ,' last_name' : 'Powar' ,' email' : 'abhi@gmail.com' ,' gender' : 'Male'}))
+
+'''wriet raw'''
+# print(write_raw("Insert into person values(151,'rajesh', 'bhat', 'raju@gmail.com' , 'male')", None))
+
+'''update demo'''
+# print(update('person', {'email' : 'rajesh@gmail.com'} ,{'id':151}))
+
+'''delete demo'''
+# print(delete('person', {'id' : '151'}))
+
+'''update multiple'''
+# print(update_multiple('person', 'email',['id','gender'], {' id' : '150' ,' gender' : 'Male'}))
+print('done')
